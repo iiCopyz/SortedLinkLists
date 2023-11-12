@@ -1,19 +1,8 @@
-#
-For this machine problem, you are to program a solution to the Towers of
-Hanoi problem. Instead of a recursive program, you must implement a
-solution using a loop and a stack. The algorithm you are to implement is:
+For this machine problem you will read in a sequence of non-zero integers, terminated by 0 and store them in a (singly) linked list. In particular you are 
+to have two lists one for even integers and one for odd integers. You are to insert the links into the list in such a way that the list is sorted from
+smallest to largest at all times. You are to then print out the list. Next you are two merge the two lists into a single sorted list which should be sorted
+from smallest to largest. This is to be done by removing links from the even and odd list and inserting them into the merge sorted list. Merging will be
+discussed in class and you are to follow the method given in class. You should print out the merged list. Now go through the merged list and remove all of
+the nodes with even values. Again print out this list. Finally recycle all of the links.
 
-PROCEDURE HANOI
-
-  /* Move n disks from pole 1 to pole 2 using pole 3 */
-  S ←− empty stack
-  S ⇐ (n, 1, 2, 3)
-  while (S ̸= empty )
-    (n, i, j, k) ⇐ S
-    if n = 1 then
-        move the top disk from pole i to pole k
-    else
-        S ⇐ (n − 1, j, i, k)
-        S ⇐ (1, i, j, k)
-        S ⇐ (n − 1, i, k, j)
-end HANOI
+You MUST write the program by supplying the missing code to the partialprogram supplied.~~
